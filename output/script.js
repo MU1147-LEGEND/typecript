@@ -43,10 +43,18 @@ myFunc();
 // 8. function return type
 function add(a, b) {
     // explicit return type
-    return a * b;
+    return a + b;
 }
 const userDetails = (id, user) => {
     console.log(`${id} - Hello ${user.name}`);
 };
 userDetails(3, { name: "Mohammad", age: 22 });
-// 10.
+// 10. Function signatures
+// creating signature
+let signFunc;
+// writing body
+signFunc = (a, b) => {
+    // or  signFunc = (a:number, b:number)
+    return a + b;
+};
+console.log(signFunc(2, 3));

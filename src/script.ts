@@ -57,7 +57,7 @@ myFunc();
 // 8. function return type
 function add(a: number, b: number): number {
     // explicit return type
-    return a * b;
+    return a + b;
 }
 
 // 9. Type Aliases
@@ -70,4 +70,13 @@ const userDetails = (id: ID, user: USER) => {
 
 userDetails(3, { name: "Mohammad", age: 22 });
 
-// 10.
+// 10. Function signatures
+// creating signature
+let signFunc: (x: number, y: number) => number;
+// writing body
+signFunc = (a, b) => {
+    // or  signFunc = (a:number, b:number)
+    return a + b;
+};
+
+console.log(signFunc(2,3));
