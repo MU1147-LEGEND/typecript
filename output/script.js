@@ -58,3 +58,17 @@ signFunc = (a, b) => {
     return a + b;
 };
 console.log(signFunc(2, 3));
+// 11. Classes in typescript
+class Player {
+    constructor(n, a, c) {
+        this.name = n;
+        this.age = a;
+        this.country = c;
+    }
+    play() {
+        console.log(`${this.name} is playing`);
+        return 'e';
+    }
+}
+const player1 = new Player("Mohammad", 22, "Bangladesh");
+player1.play();
